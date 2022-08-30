@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-image:url(./images/footer-bg.jpg) ;
+    height: 100vh;
+    padding: 150px;
+}
+.box{
+    background-color:#6e8ba5;
+    margin-top: 10px; 
+    padding: 20px; 
+    border-radius: 15px;
+    text-align: center;
+}
+.box h1{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    position: relative;
+    color: rgb(22, 14, 14);
+}
+.box h1::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 400px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 200px);
+}
+.box h1::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: rgb(53, 15, 15);
+    bottom: 0;
+    left: calc(50% - 50px);
+}
+.btns{
+    margin-bottom: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+button{
+    outline: none;
+    border: 2px solid rgb(53, 15, 15);
+    border-radius: 20px;
+    border-bottom-width: 10px;
+    width: 20%;
+    background-color:rgb(207, 216, 221); 
+    text-align: center;
+    padding: 10px 0 ;
+    color:  rgb(22, 14, 14);
+}
+p{
+    font-size: 27px;
+    font-weight: 200;
+}
+form{
+    /* width: 90%; */
+    margin-bottom: 20px;
+}
+form input{
+        margin: 50px 0;
+}
+form .text{
+width: 50%;
+padding: 10px 20px;
+border-radius: 20px;
+border: none;
+background-color:rgb(66, 9, 9);
+color: white;
+}
+form .submit{
+    padding: 10px 20px;
+    background-color: rgb(207, 216, 221);
+    border-radius: 20px;
+    width: 20%;
+    border: none;
+    margin-left: -90px;
+    font-weight: bold;
+}
+@media screen and (max-width: 900px){
+body{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0px;
+}
+.box{ 
+    padding-bottom:15px;
+    padding-top:5px;
+    width: 90%;
+    margin-top: 0px;
+    
+} 
+.box h1{
+    font-size: 35px;
+    margin: 25px 50px; 
+}
+.box h1::before {
+    width: 150px;
+    left: calc(50% - 75px);
+}
+.box h1::after {
+    width:30px ;
+    left: calc(50% - 15px);
+}
+    
+.btns{
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap ;
+}
+button{
+    width: 80%;
+    margin-top: 0px; 
+    font-size: 18px;
+    font-weight:600;
+    padding: 5px 0;
+    border-bottom-width: 5px;    
+
+}
+form .text{
+    width: 70%;
+}
+form .submit{
+    width:35%;
+    margin-left: -100px;
+} 
+#output{
+    margin-bottom: 0px;
+    margin-top: -70px;
+}
+}
+
